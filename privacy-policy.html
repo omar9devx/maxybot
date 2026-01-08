@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — MaxyBot</title>
+  <link rel="icon" href="maxy.png" />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#0f1620; --muted:#9fb0c0; --text:#e8f0f6;
+      --accent:#5cc8ff; --accent-2:#7c4dff; --border:rgba(255,255,255,0.08);
+    }
+    body{
+      margin:0; font-family: system-ui, Arial, "Segoe UI", sans-serif;
+      background: radial-gradient(1200px 600px at 85% -10%, rgba(124,77,255,0.15), transparent 60%),
+                  radial-gradient(900px 500px at -10% 110%, rgba(92,200,255,0.12), transparent 60%), var(--bg);
+      color:var(--text); line-height:1.8;
+    }
+    .wrap{max-width:900px; margin:40px auto; padding:0 16px 64px}
+    header{display:flex; align-items:center; justify-content:space-between; margin-bottom:20px}
+    header img{width:56px; height:56px; border-radius:14px; border:1px solid var(--border)}
+    h1{margin:0; font-size:28px}
+    .badge{font-size:13px; color:#0b1220; background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      padding:6px 10px; border-radius:999px; font-weight:700}
+    button{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      border:none; padding:8px 14px; border-radius:12px;
+      cursor:pointer; color:#fff; font-weight:bold; margin-left:10px;
+    }
+    main{display:grid; gap:16px}
+    section{background:var(--card); border:1px solid var(--border); border-radius:20px; padding:20px}
+    h2{margin-top:0; font-size:20px}
+    p,li{margin:10px 0}
+    a{color:var(--accent); text-decoration:none}
+    footer{margin-top:20px; color:var(--muted); font-size:13px; text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex; gap:12px; align-items:center">
+        <img src="maxy.png" alt="MaxyBot Logo">
+        <h1>Privacy Policy <span class="badge">MaxyBot</span></h1>
+      </div>
+      <button id="langBtn">🇸🇦 العربية</button>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="lang" data-en="Introduction" data-ar="مقدمة">Introduction</h2>
+        <p class="lang" 
+           data-en="This Privacy Policy explains how MaxyBot collects, uses, and protects your data." 
+           data-ar="توضح سياسة الخصوصية هذه كيفية جمع MaxyBot للبيانات الخاصة بك واستخدامها وحمايتها.">
+           This Privacy Policy explains how MaxyBot collects, uses, and protects your data.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="lang" data-en="Data Collection" data-ar="جمع البيانات">Data Collection</h2>
+        <ul>
+          <li class="lang" data-en="We collect only the necessary information to provide bot services." 
+              data-ar="نجمع فقط المعلومات الضرورية لتقديم خدمات البوت.">We collect only the necessary information to provide bot services.</li>
+          <li class="lang" data-en="We do not sell your data to third parties." 
+              data-ar="لا نقوم ببيع بياناتك لأي جهة خارجية.">We do not sell your data to third parties.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="lang" data-en="Usage" data-ar="الاستخدام">Usage</h2>
+        <p class="lang" 
+           data-en="Collected data is used solely to improve the bot's functionality and user experience." 
+           data-ar="يتم استخدام البيانات المجمعة فقط لتحسين وظيفة البوت وتجربة المستخدم.">
+           Collected data is used solely to improve the bot's functionality and user experience.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="lang" data-en="Security" data-ar="الأمان">Security</h2>
+        <p class="lang" 
+           data-en="We take reasonable measures to protect your data from unauthorized access or disclosure." 
+           data-ar="نتخذ إجراءات معقولة لحماية بياناتك من الوصول أو الكشف غير المصرح به.">
+           We take reasonable measures to protect your data from unauthorized access or disclosure.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="lang" data-en="Contact" data-ar="التواصل">Contact</h2>
+        <ul>
+          <li class="lang" data-en="Support Server: https://discord.gg/tSTFAEgewm" 
+              data-ar="سيرفر الدعم: https://discord.gg/tSTFAEgewm">Support Server: https://discord.gg/tSTFAEgewm</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <span class="lang" data-en="MaxyBot ©" data-ar="ماكسي بوت ©">MaxyBot ©</span> <span id="y"></span>
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('langBtn');
+    let current = 'en';
+    btn.onclick = () => {
+      current = current === 'en' ? 'ar' : 'en';
+      document.querySelectorAll('.lang').forEach(el=>{
+        el.innerHTML = el.getAttribute(`data-${current}`);
+      });
+      document.body.dir = current === 'ar' ? 'rtl' : 'ltr';
+      btn.textContent = current === 'ar' ? "🇬🇧 English" : "🇸🇦 العربية";
+    };
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

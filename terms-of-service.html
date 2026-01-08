@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of Service — MaxyBot</title>
+  <link rel="icon" href="maxy.png" />
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#0f1620; --muted:#9fb0c0; --text:#e8f0f6;
+      --accent:#5cc8ff; --accent-2:#7c4dff; --border:rgba(255,255,255,0.08);
+    }
+    body{
+      margin:0; font-family: system-ui, Arial, "Segoe UI", sans-serif;
+      background: radial-gradient(1200px 600px at 85% -10%, rgba(124,77,255,0.15), transparent 60%),
+                  radial-gradient(900px 500px at -10% 110%, rgba(92,200,255,0.12), transparent 60%), var(--bg);
+      color:var(--text); line-height:1.8;
+    }
+    .wrap{max-width:900px; margin:40px auto; padding:0 16px 64px}
+    header{display:flex; align-items:center; justify-content:space-between; margin-bottom:20px}
+    header img{width:56px; height:56px; border-radius:14px; border:1px solid var(--border)}
+    h1{margin:0; font-size:28px}
+    .badge{font-size:13px; color:#0b1220; background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      padding:6px 10px; border-radius:999px; font-weight:700}
+    button{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      border:none; padding:8px 14px; border-radius:12px;
+      cursor:pointer; color:#fff; font-weight:bold; margin-left:10px;
+    }
+    main{display:grid; gap:16px}
+    section{background:var(--card); border:1px solid var(--border); border-radius:20px; padding:20px}
+    h2{margin-top:0; font-size:20px}
+    p,li{margin:10px 0}
+    a{color:var(--accent); text-decoration:none}
+    footer{margin-top:20px; color:var(--muted); font-size:13px; text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex; gap:12px; align-items:center">
+        <img src="maxy.png" alt="MaxyBot Logo">
+        <h1>Terms of Service <span class="badge">MaxyBot</span></h1>
+      </div>
+      <button id="langBtn">🇸🇦 العربية</button>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="lang" data-en="Agreement" data-ar="الموافقة على الشروط">Agreement</h2>
+        <p class="lang" 
+           data-en="By using MaxyBot on Discord, you agree to these Terms. If you do not agree, please stop using the bot." 
+           data-ar="باستخدامك MaxyBot على ديسكورد، فإنك توافق على هذه الشروط. إذا لم تكن موافقًا، يرجى التوقف عن استخدام البوت.">
+           By using MaxyBot on Discord, you agree to these Terms. If you do not agree, please stop using the bot.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="lang" data-en="Permitted Use" data-ar="الاستخدام المسموح">Permitted Use</h2>
+        <ul>
+          <li class="lang" data-en="You may use MaxyBot only for lawful activities in compliance with Discord Terms." 
+              data-ar="يمكنك استخدام MaxyBot فقط في الأنشطة القانونية ووفقًا لشروط خدمة ديسكورد.">You may use MaxyBot only for lawful activities in compliance with Discord Terms.</li>
+          <li class="lang" data-en="You must not use the bot for spam, abuse, or service disruption." 
+              data-ar="يُحظر استخدام البوت في الرسائل المزعجة أو الإساءة أو تعطيل الخدمة.">You must not use the bot for spam, abuse, or service disruption.</li>
+          <li class="lang" data-en="We may suspend or terminate your access at any time if you violate these terms." 
+              data-ar="يجوز لنا تعليق أو إنهاء وصولك في أي وقت إذا انتهكت هذه الشروط.">We may suspend or terminate your access at any time if you violate these terms.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="lang" data-en="Privacy" data-ar="الخصوصية">Privacy</h2>
+        <p class="lang" 
+           data-en="Your use of MaxyBot is also subject to our Privacy Policy." 
+           data-ar="استخدامك لـ MaxyBot يخضع أيضًا لسياسة الخصوصية الخاصة بنا.">
+           Your use of MaxyBot is also subject to our Privacy Policy.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="lang" data-en="Liability" data-ar="حدود المسؤولية">Liability</h2>
+        <p class="lang" 
+           data-en="The service is provided 'as is'. We are not liable for damages arising from use or inability to use the bot." 
+           data-ar="يُقدَّم البوت كما هو. نحن غير مسؤولين عن أي أضرار ناتجة عن استخدام البوت أو عدم القدرة على استخدامه.">
+           The service is provided 'as is'. We are not liable for damages arising from use or inability to use the bot.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="lang" data-en="Changes" data-ar="التغييرات">Changes</h2>
+        <p class="lang" 
+           data-en="We may update these Terms at any time. Continued use means acceptance of the new Terms." 
+           data-ar="يجوز لنا تحديث هذه الشروط في أي وقت. استمرارك في الاستخدام يعني موافقتك على الشروط الجديدة.">
+           We may update these Terms at any time. Continued use means acceptance of the new Terms.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="lang" data-en="Contact" data-ar="التواصل">Contact</h2>
+        <ul>
+          <li class="lang" data-en="Support Server: https://discord.gg/tSTFAEgewm" 
+              data-ar="سيرفر الدعم: https://discord.gg/tSTFAEgewm">Support Server: https://discord.gg/tSTFAEgewm</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <span class="lang" data-en="MaxyBot ©" data-ar="ماكسي بوت ©">MaxyBot ©</span> <span id="y"></span>
+    </footer>
+  </div>
+
+  <script>
+    const btn = document.getElementById('langBtn');
+    let current = 'en';
+    btn.onclick = () => {
+      current = current === 'en' ? 'ar' : 'en';
+      document.querySelectorAll('.lang').forEach(el=>{
+        el.innerHTML = el.getAttribute(`data-${current}`);
+      });
+      document.body.dir = current === 'ar' ? 'rtl' : 'ltr';
+      btn.textContent = current === 'ar' ? "🇬🇧 English" : "🇸🇦 العربية";
+    };
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
