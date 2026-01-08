@@ -1,3 +1,4 @@
+# 24+ Cogs in cogs/ !
 # bot.py
 # -*- coding: utf-8 -*-
 from __future__ import annotations
